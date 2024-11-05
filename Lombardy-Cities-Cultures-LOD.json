@@ -1,0 +1,94 @@
+{
+  "@context": {
+    "name": "http://schema.org/name",
+    "location": "http://schema.org/location",
+    "tradition": "http://schema.org/about",
+    "city": "http://schema.org/City"
+  },
+  "@graph": [
+    {
+      "@id": "https://example.org/data/Milan",
+      "name": "Milan (Milano)",
+      "location": "Metropolitan City of Milan",
+      "tradition": "Milan Fashion Week — Held twice a year, this is one of the most prestigious fashion events worldwide, showcasing Italian and international fashion designers.",
+      "city": "Milan"
+    },
+    {
+      "@id": "https://example.org/data/Bergamo",
+      "name": "Bergamo",
+      "location": "Province of Bergamo",
+      "tradition": "Sant’Alessandro Feast — A celebration of Bergamo’s patron saint, featuring parades, food markets, and historical re-enactments.",
+      "city": "Bergamo"
+    },
+    {
+      "@id": "https://example.org/data/Brescia",
+      "name": "Brescia",
+      "location": "Province of Brescia",
+      "tradition": "Mille Miglia — Known as the 'most beautiful race in the world,' this historical car race attracts vintage car enthusiasts from around the globe.",
+      "city": "Brescia"
+    },
+    {
+      "@id": "https://example.org/data/Como",
+      "name": "Como",
+      "location": "Province of Como",
+      "tradition": "Sagra di San Giovanni — Held on Lake Como, this festival celebrates St. John with a boat parade, fireworks, and a historical re-enactment.",
+      "city": "Como"
+    },
+    {
+      "@id": "https://example.org/data/Cremona",
+      "name": "Cremona",
+      "location": "Province of Cremona",
+      "tradition": "Festival of Torrone — A week-long event celebrating torrone (nougat) with historical parades, culinary events, and tasting of local varieties.",
+      "city": "Cremona"
+    },
+    {
+      "@id": "https://example.org/data/Lecco",
+      "name": "Lecco",
+      "location": "Province of Lecco",
+      "tradition": "Manzonian Celebrations — Dedicated to the famous Italian writer Alessandro Manzoni, with literary events, exhibitions, and performances based on his works.",
+      "city": "Lecco"
+    },
+    {
+      "@id": "https://example.org/data/Lodi",
+      "name": "Lodi",
+      "location": "Province of Lodi",
+      "tradition": "Fiera di San Bassiano — Honoring the patron saint San Bassiano, the event includes a traditional open-air market, local food, and festivities.",
+      "city": "Lodi"
+    },
+    {
+      "@id": "https://example.org/data/Mantua",
+      "name": "Mantua (Mantova)",
+      "location": "Province of Mantua",
+      "tradition": "Festivaletteratura — One of Italy's largest literary festivals, attracting writers, poets, and literature enthusiasts from across the country.",
+      "city": "Mantua"
+    },
+    {
+      "@id": "https://example.org/data/Monza",
+      "name": "Monza",
+      "location": "Province of Monza and Brianza",
+      "tradition": "Italian Grand Prix — The Monza racetrack hosts this world-famous Formula 1 event, bringing together racing fans from around the world.",
+      "city": "Monza"
+    },
+    {
+      "@id": "https://example.org/data/Pavia",
+      "name": "Pavia",
+      "location": "Province of Pavia",
+      "tradition": "Sagra di San Siro — Celebrated in honor of St. Syrus, the city’s patron saint, with a religious procession and cultural events.",
+      "city": "Pavia"
+    },
+    {
+      "@id": "https://example.org/data/Sondrio",
+      "name": "Sondrio",
+      "location": "Province of Sondrio",
+      "tradition": "Festa della Madonna della Sassella — A religious pilgrimage and festival held at the Madonna della Sassella sanctuary, celebrated with local food and wine.",
+      "city": "Sondrio"
+    },
+    {
+      "@id": "https://example.org/data/Varese",
+      "name": "Varese",
+      "location": "Province of Varese",
+      "tradition": "Sacred Mountain (Sacro Monte) Pilgrimage — Known for the Sacro Monte di Varese, a pilgrimage route and UNESCO site that attracts visitors for both its religious and historical significance.",
+      "city": "Varese"
+    }
+  ]
+}
