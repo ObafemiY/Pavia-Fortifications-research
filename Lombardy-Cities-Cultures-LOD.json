@@ -26,7 +26,7 @@
       "city": "Bergamo",
       "sameAs": [
         "https://dbpedia.org/resource/Bergamo",
-        "https://www.wikidata.org/wiki/Q495"
+        "https://www.wikidata.org/wiki/Q16137"
       ]
     },
     {
@@ -37,7 +37,7 @@
       "city": "Brescia",
       "sameAs": [
         "https://dbpedia.org/resource/Brescia",
-        "https://www.wikidata.org/wiki/Q497"
+        "https://www.wikidata.org/wiki/Q6221"
       ]
     },
     {
@@ -48,7 +48,7 @@
       "city": "Como",
       "sameAs": [
         "https://dbpedia.org/resource/Como",
-        "https://www.wikidata.org/wiki/Q518"
+        "https://www.wikidata.org/wiki/Q1308"
       ]
     },
     {
@@ -59,7 +59,7 @@
       "city": "Cremona",
       "sameAs": [
         "https://dbpedia.org/resource/Cremona",
-        "https://www.wikidata.org/wiki/Q515"
+        "https://www.wikidata.org/wiki/Q6231"
       ]
     },
     {
@@ -70,7 +70,7 @@
       "city": "Lecco",
       "sameAs": [
         "https://dbpedia.org/resource/Lecco",
-        "https://www.wikidata.org/wiki/Q505"
+        "https://www.wikidata.org/wiki/Q16199"
       ]
     },
     {
@@ -81,7 +81,7 @@
       "city": "Lodi",
       "sameAs": [
         "https://dbpedia.org/resource/Lodi,_Lombardy",
-        "https://www.wikidata.org/wiki/Q51530"
+        "https://www.wikidata.org/wiki/Q16201"
       ]
     },
     {
@@ -92,7 +92,7 @@
       "city": "Mantua",
       "sameAs": [
         "https://dbpedia.org/resource/Mantua",
-        "https://www.wikidata.org/wiki/Q516"
+        "https://www.wikidata.org/wiki/Q16204"
       ]
     },
     {
@@ -103,7 +103,7 @@
       "city": "Monza",
       "sameAs": [
         "https://dbpedia.org/resource/Monza",
-        "https://www.wikidata.org/wiki/Q492"
+        "https://www.wikidata.org/wiki/Q16210"
       ]
     },
     {
@@ -114,7 +114,7 @@
       "city": "Pavia",
       "sameAs": [
         "https://dbpedia.org/resource/Pavia",
-        "https://www.wikidata.org/wiki/Q530"
+        "https://www.wikidata.org/wiki/Q16231"
       ]
     },
     {
@@ -125,7 +125,7 @@
       "city": "Sondrio",
       "sameAs": [
         "https://dbpedia.org/resource/Sondrio",
-        "https://www.wikidata.org/wiki/Q6346"
+        "https://www.wikidata.org/wiki/Q16282"
       ]
     },
     {
@@ -136,7 +136,7 @@
       "city": "Varese",
       "sameAs": [
         "https://dbpedia.org/resource/Varese",
-        "https://www.wikidata.org/wiki/Q532"
+        "https://www.wikidata.org/wiki/Q16299"
       ]
     }
   ]
