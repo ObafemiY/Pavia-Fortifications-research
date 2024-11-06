@@ -14,40 +14,53 @@
 
         body {
             font-family: 'Open Sans', sans-serif;
-            line-height: 1.7;
+            line-height: 1.6;
             color: #333; /* Dark text for readability */
             background-color: #fff; /* White background */
         }
 
-        h1, h2, h3 {
-        font-family: 'Arial', 'Helvetica', sans-serif; /* Boeing-inspired bold sans-serif style */
-        color: #fff; /* White color for headers */
-        font-weight: bold; /* Bold styling */
+        /* Header 1 (h1) Styles */
+        h1 {
+            font-family: 'Arial', sans-serif;
+            color: #fff; /* White color for h1 */
+            font-weight: bold;
+        }
+
+        /* Header 2 and Header 3 (h2, h3) Styles */
+        h2, h3 {
+            font-family: 'Arial', sans-serif;
+            color: #000; /* Black color for h2 and h3 */
+            font-weight: bold;
         }
 
         /* Header Styles */
-        <style>
-    /* Header 1 (h1) Styles */
-    h1 {
-        font-family: 'Arial', 'Helvetica', sans-serif; /* Bold sans-serif font */
-        color: #fff; /* White color for h1 */
-        font-weight: bold;
-    }
+        header {
+            background: #000; /* Black header background */
+            color: #fff; /* White text */
+            padding: 2em;
+            text-align: center;
+        }
 
-    /* Header 2 and Header 3 (h2, h3) Styles */
-    h2, h3 {
-        font-family: 'Arial', 'Helvetica', sans-serif; /* Bold sans-serif font */
-        color: #000; /* Black color for h2 and h3 */
-        font-weight: bold;
-    }
-</style>
+        header h1 {
+            font-size: 2.5em;
+            margin-bottom: 0.5em;
+        }
 
+        header p {
+            font-size: 1.2em;
+            margin-top: 0.5em;
+        }
 
         /* Main Content Styles */
         .container {
-            width: 80%;
+            width: 90%;
             max-width: 1200px;
             margin: 2em auto;
+        }
+
+        /* Adjust margin for Introduction section */
+        .introduction {
+            margin-bottom: 3em; /* Adds more space between Introduction and Features sections */
         }
 
         /* Feature Section */
