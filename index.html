@@ -93,14 +93,15 @@
             margin-bottom: 3em;
         }
 
-        .download-section button {
+        .download-section a {
+            display: inline-block;
             padding: 1em 2em;
             background-color: #FFD700;
             color: #1F3C73;
-            border: none;
             border-radius: 5px;
             font-size: 1em;
-            cursor: pointer;
+            text-decoration: none;
+            font-weight: bold;
         }
 
         .download-section p {
@@ -175,7 +176,7 @@
     <!-- JSON-LD Data Download Section -->
     <section class="download-section">
         <h2>Download Lombardy’s Cultural Dataset</h2>
-        <button onclick="window.location.href='lombardy_data.jsonld'">Download JSON-LD File</button>
+        <a href="https://raw.githubusercontent.com/ObafemiY/Lombardy-Cities-Cultures-LOD/refs/heads/main/Lombardy-Cities-Cultures-LOD.json" download>Download JSON-LD File</a>
         <p>Our data is open for use under the Creative Commons license. Please cite appropriately when using.</p>
     </section>
 </main>
@@ -184,8 +185,8 @@
 <footer>
     <p>&copy; 2024 Lombardy Cultural Data Project. All Rights Reserved.</p>
     <p>
-        <a href="#">About The Creator</a> |
-        <a href="#">Contact The Creator</a> |
+        <a href="#">About The Ceator</a> |
+        <a href="#">Contact The Editor</a> |
         <a href="#">License and Attribution</a> |
         <a href="#">Social Media</a>
     </p>
