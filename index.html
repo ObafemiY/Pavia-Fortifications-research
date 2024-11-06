@@ -1,14 +1,195 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Lombardy Cities and their Cultural Traditions Linked Open Data</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Discover Lombardy: Cities, Culture, and Traditions</title>
+    <style>
+        /* Basic Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Open Sans', sans-serif;
+            line-height: 1.6;
+            color: #4A4A4A;
+            background-color: #F5F5F5;
+        }
+
+        h1, h2, h3 {
+            font-family: 'Playfair Display', serif;
+            color: #1F3C73;
+        }
+
+        /* Header Styles */
+        header {
+            background: #66A182;
+            color: #fff;
+            padding: 2em;
+            text-align: center;
+        }
+
+        header h1 {
+            font-size: 2.5em;
+            margin-bottom: 0.5em;
+        }
+
+        header p {
+            font-size: 1.2em;
+            margin-top: 0.5em;
+        }
+
+        /* Main Content Styles */
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: 2em auto;
+        }
+
+        /* Feature Section */
+        .features {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 2em;
+            margin-bottom: 3em;
+        }
+
+        .feature {
+            flex: 1;
+            min-width: 250px;
+            background: #FFD700;
+            padding: 1.5em;
+            border-radius: 8px;
+            color: #1F3C73;
+        }
+
+        /* City Highlights Section */
+        .city-highlights {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 2em;
+            margin-bottom: 3em;
+        }
+
+        .city-card {
+            flex: 1;
+            min-width: 250px;
+            background: #CB8589;
+            color: #fff;
+            padding: 1.5em;
+            border-radius: 8px;
+        }
+
+        /* Download Section */
+        .download-section {
+            text-align: center;
+            padding: 3em;
+            background: #1F3C73;
+            color: #fff;
+            border-radius: 8px;
+            margin-bottom: 3em;
+        }
+
+        .download-section button {
+            padding: 1em 2em;
+            background-color: #FFD700;
+            color: #1F3C73;
+            border: none;
+            border-radius: 5px;
+            font-size: 1em;
+            cursor: pointer;
+        }
+
+        .download-section p {
+            margin-top: 1em;
+            font-size: 0.9em;
+            color: #F5F5F5;
+        }
+
+        /* Footer */
+        footer {
+            text-align: center;
+            padding: 2em;
+            background: #66A182;
+            color: #fff;
+        }
+
+        footer a {
+            color: #FFD700;
+            text-decoration: none;
+            margin: 0 0.5em;
+        }
+    </style>
 </head>
 <body>
-  <h1>Lombardy Cities Linked Open Data</h1>
-  <p>This repository contains Linked Open Data (LOD) about cities in the Lombardy region of Italy and their famous cultural traditions. This data is structured in JSON-LD format, adhering to Linked Data standards, making it accessible and interoperable with other LOD datasets worldwide..</p>
-  <h2>Data File</h2>
-  <p>You can access the JSON-LD data <a href="https://raw.githubusercontent.com/ObafemiY/Lombardy-Cities-Cultures-LOD/refs/heads/main/Lombardy-Cities-Cultures-LOD.json" download>here</a>.</p>
+
+<header>
+    <h1>Discover the Heart of Lombardy</h1>
+    <p>Explore the cities, culture, and traditions of Lombardy, Italy.</p>
+</header>
+
+<main class="container">
+    <!-- Introduction Section -->
+    <section class="introduction">
+        <h2>Experience the Rich Heritage of Lombardy’s Cities</h2>
+        <p>Our Linked Open Data project brings you the stories, festivals, and unique traditions of Lombardy’s cities, from Milan to Mantua. Download our JSON-LD file to dive deeper into each city’s cultural heritage and explore how these traditions shape Italy’s vibrant culture.</p>
+    </section>
+
+    <!-- Features Section -->
+    <section class="features">
+        <h2>Why Explore Lombardy’s Traditions with Us?</h2>
+        <div class="feature">
+            <h3>Comprehensive Data</h3>
+            <p>Find information on every major city in Lombardy, complete with its iconic traditions and celebrations.</p>
+        </div>
+        <div class="feature">
+            <h3>Linked Open Data Format</h3>
+            <p>Our data is structured in JSON-LD, making it easy to integrate, reuse, and analyze with other datasets.</p>
+        </div>
+        <div class="feature">
+            <h3>Real-Time Cultural Insights</h3>
+            <p>Stay updated with annual events and cultural highlights across Lombardy’s cities.</p>
+        </div>
+    </section>
+
+    <!-- City Highlights Section -->
+    <section class="city-highlights">
+        <h2>City Highlights</h2>
+        <div class="city-card">
+            <h3>Milan</h3>
+            <p>Known for Milan Fashion Week, attracting designers and fashion enthusiasts from around the world.</p>
+        </div>
+        <div class="city-card">
+            <h3>Bergamo</h3>
+            <p>Celebrates Sant’Alessandro Feast with parades and historical re-enactments in honor of the city’s patron saint.</p>
+        </div>
+        <div class="city-card">
+            <h3>Mantua</h3>
+            <p>Hosts the Festivaletteratura, a celebrated literary festival that draws writers and readers from all over.</p>
+        </div>
+    </section>
+
+    <!-- JSON-LD Data Download Section -->
+    <section class="download-section">
+        <h2>Download Lombardy’s Cultural Dataset</h2>
+        <button onclick="window.location.href='lombardy_data.jsonld'">Download JSON-LD File</button>
+        <p>Our data is open for use under the Creative Commons license. Please cite appropriately when using.</p>
+    </section>
+</main>
+
+<!-- Footer Section -->
+<footer>
+    <p>&copy; 2024 Lombardy Cultural Data Project. All Rights Reserved.</p>
+    <p>
+        <a href="#">About</a> |
+        <a href="#">Contact Us</a> |
+        <a href="#">License and Attribution</a> |
+        <a href="#">Social Media</a>
+    </p>
+</footer>
+
 </body>
 </html>
