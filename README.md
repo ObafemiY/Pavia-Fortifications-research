@@ -26,4 +26,8 @@ The data is structured in [JSON-LD](https://json-ld.org/) format. Each entry con
   "name": "Milan (Milano)",
   "location": "Metropolitan City of Milan",
   "tradition": "Milan Fashion Week — Held twice a year, this is one of the most prestigious fashion events worldwide, showcasing Italian and international fashion designers."
+   "sameAs": [
+        "https://dbpedia.org/resource/Milan",
+        "https://www.wikidata.org/wiki/Q490"
+      ]
 }
