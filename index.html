@@ -139,21 +139,34 @@
         }
         .new-color{color:#fff;}
         .new-color{color:#fff;}
+        
+         /* Additional styles for the language selector */
+        .language-selector {
+            position: absolute;
+            top: 9px;
+            right: 10px;
+        }
+        .language-selector button {
+            margin: 0 5px;
+            padding: 5px 10px;
+            font-size: 9px;
+            cursor: Pointer;
+        }
     </style>
     
 </head>
 <body>
-
+<!-- Language Selector -->
+<div class="language-selector">
+    <button onclick="setLanguage('en')">English</button>
+    <button onclick="setLanguage('it')">Italian</button>
+</div>
 <header>
     <h1 data-lang-en="Discover the Heart of Lombardy" data-lang-it="Scopri il Cuore della Lombardia">Discover the Heart of Lombardy</h1>
     <p data-lang-en="Explore the cities, culture, and traditions of Lombardy, Italy." 
        data-lang-it="Esplora le città, la cultura e le tradizioni della Lombardia, Italia.">
         Explore the cities, culture, and traditions of Lombardy, Italy.</p>
-         <!-- Language Switcher -->
-    <div>
-        <button onclick="setLanguage('en')">English</button>
-        <button onclick="setLanguage('it')">Italian</button>
-    </div>
+    
 </header>
 
 <main class="container">
