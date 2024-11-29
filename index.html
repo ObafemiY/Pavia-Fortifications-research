@@ -3,147 +3,122 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Discover Lombardy: Cities, Culture, and Traditions</title>
+    <title>Lombardy Cultural Data</title>
     <style>
-        /* Basic Reset */
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
+        /* General styles */
+       /* General styles */
+body {
+    margin: 0;
+    font-family: Boing;
+    color: white;
+    background-color: #323130;
+    line-height: 1.6;
+}
 
-        body {
-            font-family: 'Open Sans', sans-serif;
-            line-height: 1.6;
-            color: #333; /* Dark text for readability */
-            background-color: #fff; /* White background */
-        }
+/* Main section styles */
+main {
+    padding: 40px; /* Adds padding to the main body content only */
+         }
 
-        /* Header 1 (h1) Styles */
-        h1 {
-            font-family: 'Arial', sans-serif;
-            color: #fff; /* White color for h1 */
-            font-weight: bold;
-        }
-
-        /* Header 2 and Header 3 (h2, h3) Styles */
-        h2, h3 {
-            font-family: 'Arial', sans-serif;
-            color: #000; /* Black color for h2 and h3 */
-            font-weight: bold;
-        }
-
-        /* Header Styles */
+        /* Header styles */
         header {
-            background: #000; /* Black header background */
-            color: #fff; /* White text */
-            padding: 2em;
+            font-family: Georgia, serif;
             text-align: center;
+            padding: 20px;
+            background-color: black;
+           
         }
 
-        header h1 {
-            font-size: 2.5em;
-            margin-bottom: 0.5em;
-        }
-
-        header p {
-            font-size: 1.2em;
-            margin-top: 0.5em;
-        }
-
-        /* Main Content Styles */
-        .container {
-            width: 90%;
-            max-width: 1200px;
-            margin: 2em auto;
-        }
-
-        /* Adjust margin for Introduction section */
-        .introduction {
-            margin-bottom: 3em; /* Adds more space between Introduction and Features sections */
-        }
-
-        /* Feature Section */
-        .features {
+        nav ul {
+            list-style: none;
+            padding: 0;
             display: flex;
-            flex-wrap: wrap;
-            gap: 2em;
-            margin-bottom: 3em;
+            justify-content: center;
+            gap: 40px;
         }
 
-        .feature {
-            flex: 1;
-            min-width: 250px;
-            background: #e60000; /* Red for feature blocks */
-            padding: 1.5em;
-            border-radius: 8px;
-            color: #fff; /* White text for contrast */
+        nav a {
+            text-decoration: none;
+            font-family: Georgia (serif);
+            color: white;
+            font-weight: bold;
         }
 
-        /* City Highlights Section */
-        .city-highlights {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 2em;
-            margin-bottom: 3em;
+        .hero h1 {
+            font-size: 3rem;
+            font-family: Trebuchet MS (sans-serif);
+            font-weight: bold;
+            margin: 20px 0;
         }
 
-        .city-card {
-            flex: 1;
-            min-width: 250px;
-            background: #333; /* Dark gray/black background */
-            color: #fff;
-            padding: 1.5em;
-            border-radius: 8px;
+        .hero p {
+            font-size: 1.2rem;
+            margin: 10px 0;
         }
 
-        /* Download Section */
-        .download-section {
+        /* Main section styles */
+        .intro, .benefits, .highlights, .download {
             text-align: center;
-            padding: 3em;
+            padding: 20px 30px;
+        }
+
+        .cards {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            margin-top: 10px;
+        }
+
+        .card {
+            background-color: #000000;
+            border-radius: 10px;
+            padding: 20px;
+            color: white;
+            width: 30%;
+            min-width: 250px;
+        }
+
+        .download-btn {
+            display: inline-block;
+            padding: 15px 30px;
+            margin: 20px 0;
+            background-color: white;
+            color: #8b0000;
+            border-radius: 10px;
+            text-decoration: none;
+            
+            /* Additional styles for .download-btn */
+               padding: 2em;
             background: #e60000; /* Red background for CTA */
             color: #fff;
-            border-radius: 8px;
-            margin-bottom: 3em;
+            border-radius: 40px;
+            margin-bottom: 1em;
         }
 
-        .download-section a {
-            display: inline-block;
-            padding: 1em 2em;
-            background-color: #000; /* Black download button */
-            color: #fff;
-            border-radius: 5px;
-            font-size: 1em;
-            text-decoration: none;
-            font-weight: bold;
-        }
-
-        .download-section p {
-            margin-top: 1em;
-            font-size: 0.9em;
-            color: #f9f9f9;
-        }
-
-        /* Footer */
+        /* Footer styles */
         footer {
-            text-align: center;
-            padding: 2em;
-            background: #000; /* Black footer */
-            color: #fff;
+            background-color: #e0e0e0;
+            color: black;
+            padding: 30px;
+        }
+
+        footer ul {
+            list-style: none;
+            padding: 40;
+            display: flex;
+            justify-content: Right;
+            gap: 20px;
         }
 
         footer a {
-            color: #e60000; /* Red for footer links */
             text-decoration: none;
-            margin: 0 0.5em;
+            justify-content: Center;
+            color: black;
         }
-        .new-color{color:#fff;}
-        .new-color{color:#fff;}
-        
          /* Additional styles for the language selector */
         .language-selector {
             position: absolute;
-            top: 9px;
+            top: 8px;
             right: 10px;
         }
         .language-selector button {
@@ -153,7 +128,6 @@
             cursor: Pointer;
         }
     </style>
-    
 </head>
 <body>
 <!-- Language Selector -->
@@ -161,35 +135,41 @@
     <button onclick="setLanguage('en')">English</button>
     <button onclick="setLanguage('it')">Italian</button>
 </div>
-<header>
-    <h1 data-lang-en="Discover the Heart of Lombardy" data-lang-it="Scopri il Cuore della Lombardia">Discover the Heart of Lombardy</h1>
-    <p data-lang-en="Explore the cities, culture, and traditions of Lombardy, Italy." 
+
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Project</a></li>
+                <li><a href="#">Highlights</a></li>
+                <li><a href="#">Contact Us</a></li>
+            </ul>
+        </nav>
+        <div class="hero">
+           <h1>DISCOVER <br> THE <br> HEART OF LOMBARDY</h1>
+            <p data-lang-en="Explore the cities, culture, and traditions of Lombardy, Italy." 
        data-lang-it="Esplora le città, la cultura e le tradizioni della Lombardia, Italia.">
         Explore the cities, culture, and traditions of Lombardy, Italy.</p>
-    
-</header>
-
-<main class="container">
-    <!-- Introduction Section -->
-    <section class="introduction">
-        <h2 data-lang-en="Experience the Rich Heritage of Lombardy’s Cities" 
+        </div>
+    </header>
+    <main>
+        <section class="intro">
+            
+            <h2 data-lang-en="Experience the Rich Heritage of Lombardy’s Cities" 
             data-lang-it="Vivi il Ricco Patrimonio delle Città della Lombardia">
             Experience the Rich Heritage of Lombardy’s Cities</h2>
         <p data-lang-en="Our Linked Open Data project offers a comprehensive look into the rich stories, celebrated festivals, and unique traditions that define each city in Lombardy, from the iconic metropolis of Milan to the historic charm of Varese. This initiative serves as a gateway to understanding the cultural pulse of Lombardy, a region renowned for its artistic legacy, vibrant community events, and timeless heritage."
            data-lang-it="Il nostro progetto Linked Open Data offre uno sguardo completo alle ricche storie, ai festival celebrati e alle tradizioni uniche che definiscono ogni città della Lombardia, dall'iconica metropoli di Milano al fascino storico di Varese. Questa iniziativa funge da porta d'accesso per comprendere il polso culturale della Lombardia, una regione rinomata per la sua eredità artistica, i vivaci eventi della comunità e il patrimonio senza tempo.">
            Our Linked Open Data project offers a comprehensive look into the rich stories, celebrated festivals, and unique traditions that define each city in Lombardy, from the iconic metropolis of Milan to the historic charm of Varese. This initiative serves as a gateway to understanding the cultural pulse of Lombardy, a region renowned for its artistic legacy, vibrant community events, and timeless heritage.</p>
-        <br> <!-- adds a line break between paragraphs -->
+       
         <p  data-lang-en="Each dataset entry explores the intricate details that make Lombardy’s cities unique — the festivals that mark the changing seasons, the culinary traditions passed down through generations, and the religious and historical celebrations that continue to unite communities. Our project captures how each city celebrates its identity, presenting a rich tapestry of traditions that contribute to Italy’s broader cultural landscape. "
            data-lang-it="Ogni voce del dataset esplora i dettagli intricati che rendono uniche le città della Lombardia: le feste che scandiscono il cambio delle stagioni, le tradizioni culinarie tramandate di generazione in generazione e le celebrazioni religiose e storiche che continuano a unire le comunità. Il nostro progetto cattura il modo in cui ogni città celebra la propria identità, presentando un ricco arazzo di tradizioni che contribuiscono al più ampio panorama culturale dell'Italia.">
           Each dataset entry explores the intricate details that make Lombardy’s cities unique — the festivals that mark the changing seasons, the culinary traditions passed down through generations, and the religious and historical celebrations that continue to unite communities. Our project captures how each city celebrates its identity, presenting a rich tapestry of traditions that contribute to Italy’s broader cultural landscape.
  </p>
-        <br> <!-- adds a line break between paragraphs -->
         
         <p data-lang-en="By downloading our JSON-LD file, you gain access to a wealth of structured data that provides historical insights and connects Lombardy’s cultural significance to a wider network of global heritage. This format allows you to explore each city’s history, discover annual events, and learn about cultural practices in a way that is both informative and accessible. "
            data-lang-it="Scaricando il nostro file JSON-LD, avrai accesso a una grande quantità di dati strutturati che forniscono approfondimenti storici e collegano il significato culturale della Lombardia a una rete più ampia di patrimonio globale. Questo formato ti consente di esplorare la storia di ogni città, scoprire eventi annuali e apprendere le pratiche culturali in un modo che sia informativo e accessibile.">
          By downloading our JSON-LD file, you gain access to a wealth of structured data that provides historical insights and connects Lombardy’s cultural significance to a wider network of global heritage. This format allows you to explore each city’s history, discover annual events, and learn about cultural practices in a way that is both informative and accessible.</p>
-         
-        <br> <!-- adds a line break between paragraphs -->
         
         <p  data-lang-en="Whether you're a researcher, educator, traveler, or cultural enthusiast, our Linked Open Data project invites you to delve into Lombardy's vibrant traditions. Download the data, explore, and see how Lombardy's spirit continues to shape Italy's identity and inspire the world. "
            data-lang-it="Che tu sia un ricercatore, un educatore, un viaggiatore o un appassionato di cultura, il nostro progetto Linked Open Data ti invita ad addentrarti nelle vivaci tradizioni della Lombardia. Scarica i dati, esplora e scopri come lo spirito della Lombardia continua a plasmare l'identità dell'Italia e a ispirare il mondo.">
@@ -197,70 +177,71 @@
         
     </section>
 
-    <!-- Features Section -->
-    <section class="features">
-        <h2 data-lang-en="Why Explore Lombardy’s Traditions with Us? "
+        <section class="benefits">
+             <h2 data-lang-en="Why Explore Lombardy’s Traditions with Us? "
            data-lang-it="Perché esplorare le tradizioni lombarde con noi?">
        Why Explore Lombardy’s Traditions with Us?</h2>
-        <div class="feature">
-            <h3 class="new-color" data-lang-en="Comprehensive Data"
+            <div class="cards">
+                <div class="card">
+                    <h3 data-lang-en="Comprehensive Data"
            data-lang-it="Dati completi">
        Comprehensive Data</h3>
-            <p data-lang-en="Find information on every major city in Lombardy, complete with its iconic traditions and celebrations."
+                    <p data-lang-en="Find information on every major city in Lombardy, complete with its iconic traditions and celebrations."
            data-lang-it="Trova informazioni su tutte le principali città della Lombardia, con le loro tradizioni e celebrazioni iconiche.">
        Find information on every major city in Lombardy, complete with its iconic traditions and celebrations.</p>
-        </div>
-        <div class="feature">
-            <h3 class="new-color" data-lang-en="Linked Open Data Format"
+                </div>
+                <div class="card">
+                    <h3 data-lang-en="Linked Open Data Format"
            data-lang-it="Formato dati aperto collegato">
        Linked Open Data Format</h3>
             <p  data-lang-en="Our data is structured in JSON-LD, making it easy to integrate, reuse, and analyze with other datasets."
            data-lang-it="I nostri dati sono strutturati in JSON-LD, facilitando l'integrazione, il riutilizzo e l'analisi con altri set di dati.">
-      Our data is structured in JSON-LD, making it easy to integrate, reuse, and analyze with other datasets.</p>
-        </div>
-        <div class="feature">
-            <h3 class="new-color" data-lang-en="Real-Time Cultural Insights"
+      Our data is structured in JSON-LD, making it easy to integrate, reuse, and analyze with other datasets.</p> </h3>
+                </div>
+                <div class="card">
+                    <h3 data-lang-en="Real-Time Cultural Insights"
            data-lang-it="Approfondimenti culturali in tempo reale">
-      Real-Time Cultural Insights</h3>
-            <p  data-lang-en="Stay updated with annual events and cultural highlights across Lombardy’s cities."
+      Real-Time Cultural Insights</h3></h3>
+                    <p  data-lang-en="Stay updated with annual events and cultural highlights across Lombardy’s cities."
            data-lang-it="Rimani aggiornato sugli eventi annuali e gli eventi culturali più importanti nelle città della Lombardia.">
       Stay updated with annual events and cultural highlights across Lombardy’s cities.</p>
-        </div>
-    </section>
+            </div>
+        </section>
 
-    <!-- City Highlights Section -->
-    <section class="city-highlights">
-        <h2  data-lang-en="City Highlights"
+        <section class="highlights">
+            <h2  data-lang-en="City Highlights"
            data-lang-it="Punti salienti della città">
     City Highlights</h2>
-        <div class="city-card">
-            <h3 class="new-color"  data-lang-en="Milan"
-           data-lang-it="Milano">
-    Milan</h3>
-            <p data-lang-en="Known for Milan Fashion Week, which showcases the latest trends and innovative designs, this prestigious event attracts designers and fashion enthusiasts from around the world, eager to witness groundbreaking collections and engage with industry leaders."
-           data-lang-it="Noto per la Milano Fashion Week, che mette in mostra le ultime tendenze e i design innovativi, questo prestigioso evento attrae stilisti e appassionati di moda da tutto il mondo, desiderosi di assistere a collezioni rivoluzionarie e di interagire con i leader del settore.">
-  Known for Milan Fashion Week, which showcases the latest trends and innovative designs, this prestigious event attracts designers and fashion enthusiasts from around the world, eager to witness groundbreaking collections and engage with industry leaders.</p>
-        </div>
-        <div class="city-card">
-            <h3 class="new-color" data-lang-en="Bergamo"
-           data-lang-it="Bergamo">
-   Bergamo</h3>
-            <p  data-lang-en="Celebrates Sant’Alessandro Feast with vibrant parades and captivating historical re-enactments in honor of the city’s patron saint, showcasing traditional music and dance, as well as the colorful costumes worn by participants who embody the rich heritage and cultural significance of this cherished event. "
-           data-lang-it="Celebra la festa di Sant'Alessandro con vivaci sfilate e accattivanti rievocazioni storiche in onore del santo patrono della città, esibendo musica e danza tradizionali, nonché i costumi colorati indossati dai partecipanti che incarnano il ricco patrimonio e il significato culturale di questo amato evento.">
-  Celebrates Sant’Alessandro Feast with vibrant parades and captivating historical re-enactments in honor of the city’s patron saint, showcasing traditional music and dance, as well as the colorful costumes worn by participants who embody the rich heritage and cultural significance of this cherished event. </p>
-        </div>
-        <div class="city-card">
-            <h3 class="new-color"data-lang-en="Varese"
-           data-lang-it="Varese">
-   Varese</h3>
-            <p  data-lang-en="Known for the Sacro Monte di Varese, which is a renowned pilgrimage route and UNESCO World Heritage site, this extraordinary location attracts visitors from all over the world who seek spiritual enrichment and breathtaking views. The site features a series of chapels that are intricately decorated and provide a unique glimpse into the artistic heritage of the region, making it a significant cultural treasure. "
-           data-lang-it="Noto per il Sacro Monte di Varese, rinomato percorso di pellegrinaggio e sito patrimonio mondiale dell'UNESCO, questo luogo straordinario attrae visitatori da tutto il mondo che cercano arricchimento spirituale e viste mozzafiato. Il sito presenta una serie di cappelle finemente decorate che offrono uno scorcio unico sul patrimonio artistico della regione, rendendolo un importante tesoro culturale. ">
-  Known for the Sacro Monte di Varese, which is a renowned pilgrimage route and UNESCO World Heritage site, this extraordinary location attracts visitors from all over the world who seek spiritual enrichment and breathtaking views. The site features a series of chapels that are intricately decorated and provide a unique glimpse into the artistic heritage of the region, making it a significant cultural treasure. </p>
-        </div>
-    </section>
+            <div class="cards">
+                <div class="card">
+                    <h3 data-lang-en="MILAN"
+           data-lang-it="MILANO">
+    MILAN</h3>
+                     <p  data-lang-en="Known for Milan Fashion Week, attracting designers and fashion enthusiasts from around the world."
+           data-lang-it="Famosa per la settimana della moda di Milano, che richiama stilisti e appassionati di moda da tutto il mondo.">
+  Known for Milan Fashion Week, attracting designers and fashion enthusiasts from around the world.
+</p>
+                </div>
+                <div class="card">
+                    <h3 data-lang-en="BERGAMO"
+           data-lang-it="BERGAMO">
+    BERGAMO</h3>
+                     <p  data-lang-en="Celebrates Sant'Alessandro Feast with parades and historical re-enactments in honor of the city's patron saint."
+           data-lang-it="Festeggia la festa di Sant'Alessandro con sfilate e rievocazioni storiche in onore del patrono della città.">
+  Celebrates Sant'Alessandro Feast with parades and historical re-enactments in honor of the city's patron saint.
+</p>
+                </div>
+                <div class="card">
+                    <h3>VARESE</h3>
+                     <p  data-lang-en="Known for the Sacro Monte di Varese, a pilgrimage route and UNESCO site."
+           data-lang-it="Noto per il Sacro Monte di Varese, meta di pellegrinaggio e sito UNESCO.">
+  Known for the Sacro Monte di Varese, a pilgrimage route and UNESCO site.
+</p>
+                </div>
+            </div>
+        </section>
 
-    <!-- JSON-LD Data Download Section -->
-    <section class="download">
+        <section class="download">
     <h2 data-lang-en="Download Lombardy's Cultural Dataset"
         data-lang-it="Scarica il Dataset Culturale della Lombardia">
         Download Lombardy's Cultural Dataset
@@ -274,21 +255,25 @@
         NOTE: This data is completely open for use. Please cite appropriately when using. Thanks.
     </p>
 </section>
-</main>
 
-<!-- Footer Section -->
-<footer>
-      <p>&copy; 2024-2025 <span data-lang-en="Lombardy Cultural Data Project by Obafemi Yusuf. O. All Rights " 
-                                data-lang-it="Progetto Dati Culturali della Lombardia di Obafemi Yusuf. O.">
-        Lombardy Cultural Data Project by Obafemi Yusuf. O.</span> All Rights Reserved.</p>
-    <p>
-        <a href="#" data-lang-en="About The Creator" data-lang-it="Informazioni sul Creatore">About The Creator</a> |
-        <a href="#" data-lang-en="Contact The Creator" data-lang-it="Contatta il Creatore">Contact The Creator</a> |
-        <a href="#" data-lang-en="License and Attribution" data-lang-it="Licenza e Attribuzione">License and Attribution</a> |
-        <a href="#" data-lang-en="Social Media" data-lang-it="Social Media">Social Media</a>
-    </p>
-</footer>
+    </main>
 
+    <footer>
+        <div class="footer-content">
+            <h2>DIGITAL HUMANITIES</h2>
+            <p>© 2024 - Lombardy Cultural Data Project.</p>
+            <p>By Obafemi Yusuf Olatunji</p>
+            <p>All Rights Reserved.</p>
+            <ul>
+                <li><a href="#" data-lang-en="About The Creator" data-lang-it="Informazioni sul Creatore">About The Creator</a></li>
+                <li><a href="#" data-lang-en="Contacts" data-lang-it="Contatti">Contacts</a></li>
+                <li><a href="#" data-lang-en="Privacy Policy" data-lang-it="politica sulla riservatezza">Privacy Policy</a></li>
+                <li><a href="#" data-lang-en="License and Attribution" data-lang-it="Licenza e attribuzione">License and Attribution</a></li>
+                <li><a href="#" data-lang-en="Social Media" data-lang-it="Media sociali">Social Media</a></li>
+            </ul>
+        </div>
+    </footer>
+    
 <script>
     function setLanguage(lang) {
         const elements = document.querySelectorAll("[data-lang-en]");
@@ -300,6 +285,5 @@
         });
     }
 </script>
-
 </body>
 </html>
