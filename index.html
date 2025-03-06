@@ -127,6 +127,54 @@ main {
             font-size: 9px;
             cursor: Pointer;
         }
+        /* Responsive Styles */
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;  /* Stack menu items */
+        gap: 10px;
+    }
+
+    .hero h1 {
+        font-size: 2rem; /* Reduce heading size for better fit */
+        text-align: center;
+    }
+
+    .hero p {
+        font-size: 1rem;
+        text-align: center;
+    }
+
+    .cards {
+        flex-direction: column; /* Stack cards instead of row layout */
+        align-items: center;
+    }
+
+    .card {
+        width: 90%; /* Make cards take full width */
+    }
+
+    .download-btn {
+        width: 80%;  /* Ensure download button is fully visible */
+        text-align: center;
+        padding: 15px;
+        font-size: 1rem;
+    }
+
+    .language-selector {
+        position: static; /* Prevent overlap */
+        text-align: center;
+        margin-bottom: 10px;
+    }
+
+    footer ul {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    footer ul li {
+        margin-bottom: 10px;
+    }
+}
     </style>
 </head>
 <body>
