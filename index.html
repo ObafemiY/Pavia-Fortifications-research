@@ -178,6 +178,18 @@ main {
 .intro {
     text-align: Justify;
 }
+.download-container {
+    display: flex;
+    justify-content: center; /* Centers the buttons horizontally */
+    gap: 30px; /* Adds space between buttons */
+    flex-wrap: wrap; /* Prevents overflow on smaller screens */
+}
+
+.download-btn {
+    flex: 1; /* Ensures buttons grow equally */
+    max-width: 200px; /* Prevents buttons from getting too wide */
+    text-align: center;
+}
 
     </style>
 </head>
@@ -229,27 +241,22 @@ main {
         
     </section>
 
-        <section class="download">
-    <h2 data-lang-en="To fill out the questionnaire in English"
-        data-lang-it="Per compilare il questionario in inglese">
-        To fill out the questionnaire in English
-    </h2>
+        <div class="download-container">
     <a href="https://docs.google.com/forms/d/e/1FAIpQLScLG7CRXASUBrOISbaRye9D_fvP37vzkOWFK_STOvTHr_LJtw/viewform?usp=header" 
-       download="Lombardy-Cities-Cultures-LOD.json" class="download-btn">
+       class="download-btn">
         ENGLISH
     </a>
-    <section class="download">
-    <h2 data-lang-en="To fill out the questionnaire in Italian"
-        data-lang-it="Per compilare il questionario in italiano">
-        To fill out the questionnaire in Italian 
-    </h2>
+    
     <a href="https://docs.google.com/forms/d/e/1FAIpQLScLG7CRXASUBrOISbaRye9D_fvP37vzkOWFK_STOvTHr_LJtw/viewform?usp=header" 
-       download="Lombardy-Cities-Cultures-LOD.json" class="download-btn">
-        ITALIAN
+       class="download-btn">
+        ITALIAN 
     </a>
-    <p data-lang-en="NOTE: This data is completely open for use."
-       data-lang-it="NOTA: Questi dati sono completamente aperti all'uso.">
-        NOTE: This data is completely open for use.
+</div>
+
+    </a>
+    <p data-lang-en="NOTE: This Questionnaire is completely open for use."
+       data-lang-it="NOTA: Questo questionario è completamente gratuito.">
+        NOTE: This Questionnaire is completely open for use
     </p>
 </section>
 
